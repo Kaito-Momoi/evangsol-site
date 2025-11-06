@@ -44,10 +44,6 @@ const Footer = () => {
         <p className="footer-copyright">
           &copy; 2025 EvangSol Inc. All rights reserved.
         </p>
-        <div className="footer-legal">
-          <Link to="/privacy">プライバシーポリシー</Link>
-          <Link to="/terms">利用規約</Link>
-        </div>
       </div>
     </footer>
   );
