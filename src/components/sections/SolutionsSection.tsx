@@ -48,8 +48,7 @@ const SolutionsSection = () => {
       transition: {
         staggerChildren: 0.2
       }
-    },
-    viewport: { once: true, amount: 0.2 }
+    }
   };
 
   const cardAnimation = {
@@ -58,8 +57,7 @@ const SolutionsSection = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        ease: "easeOut"
+        duration: 0.6
       }
     }
   };

@@ -2,24 +2,15 @@ import { motion } from 'framer-motion';
 import './PhilosophySection.css';
 
 const PhilosophySection = () => {
-  const philosophyAnimation = {
-    initial: { opacity: 0 },
-    whileInView: {
-      opacity: 1,
-      transition: {
-        duration: 1.5,
-        ease: "easeOut"
-      }
-    },
-    viewport: { once: true, amount: 0.3 }
-  };
-
   return (
     <section className="philosophy-section">
       <div className="philosophy-container">
         <motion.div
           className="philosophy-content"
-          {...philosophyAnimation}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="philosophy-heading">
             <span className="philosophy-eyebrow">OUR PHILOSOPHY</span>
