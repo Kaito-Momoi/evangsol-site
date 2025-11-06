@@ -13,8 +13,17 @@ const PhilosophySection = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="philosophy-heading">
-            <span className="philosophy-eyebrow">OUR PHILOSOPHY</span>
-            <span className="philosophy-title">お客様の成功が、私たちの成功</span>
+            <div className="philosophy-heading-content">
+              <div className="philosophy-heading-text">
+                <span className="philosophy-eyebrow">OUR PHILOSOPHY</span>
+                <span className="philosophy-title">お客様の成功が、私たちの成功</span>
+              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}solution-provider_black.png`}
+                alt="Oracle NetSuite Solution Provider"
+                className="philosophy-badge"
+              />
+            </div>
           </h2>
           <div className="philosophy-text">
             <p>
