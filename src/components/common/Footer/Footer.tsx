@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src="/EvangSol_logo.png" alt="EvangSol" className="footer-logo-image" />
-            <img src="/solution-provider_white.png" alt="Solution Provider" className="footer-badge-image" />
+            <img src={`${import.meta.env.BASE_URL}EvangSol_logo.png`} alt="EvangSol" className="footer-logo-image" />
+            <img src={`${import.meta.env.BASE_URL}solution-provider_white.png`} alt="Solution Provider" className="footer-badge-image" />
           </div>
           <p className="footer-brand-text">
             Oracle NetSuite認定パートナーとして、<br />

@@ -22,7 +22,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo-wrapper">
           <a href="/" className="logo">
-            <img src="/EvangSol_logo.png" alt="EvangSol" className="logo-image" />
+            <img src={`${import.meta.env.BASE_URL}EvangSol_logo.png`} alt="EvangSol" className="logo-image" />
           </a>
         </div>
 
