@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Header.css';
 
@@ -21,9 +22,9 @@ const Header = () => {
     >
       <div className="header-container">
         <div className="logo-wrapper">
-          <a href="/" className="logo">
+          <Link to="/" className="logo">
             <img src={`${import.meta.env.BASE_URL}EvangSol_logo.png`} alt="EvangSol" className="logo-image" />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -33,17 +34,17 @@ const Header = () => {
               ソリューション
             </span>
             <div className="dropdown-menu">
-              <a href="https://www.evangsol.co.jp/" className="dropdown-link">
+              <a href="https://www.evangsol.co.jp/" className="dropdown-link" target="_blank" rel="noopener noreferrer">
                 NetSuite導入
               </a>
             </div>
           </div>
-          <a href="/company" className="nav-link">
+          <Link to="/company" className="nav-link">
             会社情報
-          </a>
-          <a href="/contact" className="nav-link contact-link">
+          </Link>
+          <Link to="/contact" className="nav-link contact-link">
             お問い合わせ
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -79,16 +80,16 @@ const Header = () => {
           >
             <div className="mobile-nav-section">
               <span className="mobile-nav-label">ソリューション</span>
-              <a href="https://www.evangsol.co.jp/" className="mobile-nav-link mobile-nav-sublink">
+              <a href="https://www.evangsol.co.jp/" className="mobile-nav-link mobile-nav-sublink" target="_blank" rel="noopener noreferrer">
                 NetSuite導入
               </a>
             </div>
-            <a href="/company" className="mobile-nav-link">
+            <Link to="/company" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               会社情報
-            </a>
-            <a href="/contact" className="mobile-nav-link">
+            </Link>
+            <Link to="/contact" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               お問い合わせ
-            </a>
+            </Link>
           </motion.nav>
         </motion.div>
       )}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -5,10 +6,10 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-brand">
-          <div className="footer-logo">
+          <Link to="/" className="footer-logo">
             <img src={`${import.meta.env.BASE_URL}EvangSol_logo.png`} alt="EvangSol" className="footer-logo-image" />
             <img src={`${import.meta.env.BASE_URL}solution-provider_white.png`} alt="Solution Provider" className="footer-badge-image" />
-          </div>
+          </Link>
           <p className="footer-brand-text">
             Oracle NetSuite認定パートナーとして、<br />
             お客様のビジネス変革を支援します
@@ -19,21 +20,21 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-column-title">ソリューション</h3>
             <ul className="footer-link-list">
-              <li><a href="https://www.evangsol.co.jp/">NetSuite導入</a></li>
+              <li><a href="https://www.evangsol.co.jp/" target="_blank" rel="noopener noreferrer">NetSuite導入</a></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h3 className="footer-column-title">会社情報</h3>
             <ul className="footer-link-list">
-              <li><a href="/company">会社概要</a></li>
+              <li><Link to="/company">会社概要</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h3 className="footer-column-title">サポート</h3>
             <ul className="footer-link-list">
-              <li><a href="/contact">お問い合わせ</a></li>
+              <li><Link to="/contact">お問い合わせ</Link></li>
             </ul>
           </div>
         </div>
@@ -44,8 +45,8 @@ const Footer = () => {
           &copy; 2025 EvangSol Inc. All rights reserved.
         </p>
         <div className="footer-legal">
-          <a href="/privacy">プライバシーポリシー</a>
-          <a href="/terms">利用規約</a>
+          <Link to="/privacy">プライバシーポリシー</Link>
+          <Link to="/terms">利用規約</Link>
         </div>
       </div>
     </footer>
