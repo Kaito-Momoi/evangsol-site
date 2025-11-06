@@ -1,0 +1,129 @@
+.solutions-section {
+  padding: 120px 0;
+  background: white;
+}
+
+.solutions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.solutions-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.solutions-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--gray-500);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.solutions-title {
+  font-family: var(--font-primary);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--gray-800);
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 60px;
+}
+
+.solution-card {
+  text-align: center;
+  padding: 40px 30px;
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px);
+}
+
+.solution-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 50%;
+}
+
+.solution-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--gray-500);
+}
+
+.solution-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--gray-800);
+  letter-spacing: 0.02em;
+}
+
+.solution-description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--gray-500);
+  text-align: left;
+}
+
+/* Oracle NetSuite Logo */
+.solutions-section::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 80px auto 0;
+  opacity: 0.3;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .solutions-section {
+    padding: 80px 0;
+  }
+
+  .solutions-container {
+    padding: 0 40px;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .solutions-section {
+    padding: 60px 0;
+  }
+
+  .solutions-container {
+    padding: 0 20px;
+  }
+
+  .solutions-header {
+    margin-bottom: 60px;
+  }
+
+  .solutions-title {
+    font-size: 24px;
+  }
+
+  .solution-card {
+    padding: 30px 10px;
+  }
+}
