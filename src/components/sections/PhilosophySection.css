@@ -42,18 +42,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
-}
-
-.philosophy-heading-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.philosophy-heading-text {
-  display: flex;
-  flex-direction: column;
+  gap: 32px;
 }
 
 .philosophy-eyebrow {
@@ -72,12 +61,14 @@
   letter-spacing: 0.05em;
   line-height: 1.4;
   color: var(--gray-800);
+  margin-bottom: 8px;
 }
 
 .philosophy-badge {
   height: 80px;
   width: auto;
   object-fit: contain;
+  align-self: flex-start;
 }
 
 .philosophy-text {
