@@ -15,11 +15,6 @@ const PhilosophySection = () => {
           <h2 className="philosophy-heading">
             <span className="philosophy-eyebrow">OUR PHILOSOPHY</span>
             <span className="philosophy-title">お客様の成功が、私たちの成功</span>
-            <img
-              src={`${import.meta.env.BASE_URL}solution-provider_black.png`}
-              alt="Oracle NetSuite Solution Provider"
-              className="philosophy-badge"
-            />
           </h2>
           <div className="philosophy-text">
             <p>
@@ -33,6 +28,11 @@ const PhilosophySection = () => {
               お客様のビジネス変革のパートナーとして、<br />
               継続的な成長をサポートいたします。
             </p>
+            <img
+              src={`${import.meta.env.BASE_URL}solution-provider_black.png`}
+              alt="Oracle NetSuite Solution Provider"
+              className="philosophy-badge"
+            />
           </div>
         </motion.div>
       </div>
