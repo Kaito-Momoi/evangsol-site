@@ -110,13 +110,23 @@ npm run preview
 
 ## 🚢 デプロイ
 
-このプロジェクトはGitHub Pagesへのデプロイを想定しています。
+このプロジェクトはGitHub Pagesにデプロイされています。
+
+### 🌐 公開URL
+
+- **トップページ**: https://kaito-momoi.github.io/evangsol-site/
+- **会社情報ページ**: https://kaito-momoi.github.io/evangsol-site/company
+- **お問い合わせページ**: https://kaito-momoi.github.io/evangsol-site/contact
+
+### デプロイコマンド
 
 ```bash
-# ビルド
-npm run build
+# ビルドとデプロイ（自動でビルドも実行されます）
+npm run deploy
 
-# distディレクトリの内容をGitHub Pagesにデプロイ
+# または手動でビルドしてからデプロイ
+npm run build
+npm run deploy
 ```
 
 ## 📝 カスタマイズ
