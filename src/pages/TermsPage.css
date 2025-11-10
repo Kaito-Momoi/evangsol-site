@@ -1,0 +1,257 @@
+.terms-page {
+  min-height: 100vh;
+  background: white;
+}
+
+/* Hero Section */
+.terms-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1E3A8A 0%, #3730A3 100%);
+  position: relative;
+  padding-top: 80px;
+}
+
+.terms-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.terms-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.terms-hero-subtitle {
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+/* Content Section */
+.terms-content-section {
+  padding: 120px 0;
+  background: white;
+}
+
+.terms-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Intro */
+.terms-intro {
+  margin-bottom: 60px;
+}
+
+.intro-text {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--gray-700);
+  background: var(--gray-50);
+  padding: 32px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-500);
+}
+
+/* Content Blocks */
+.content-block {
+  margin-bottom: 80px;
+}
+
+.content-block:last-child {
+  margin-bottom: 0;
+}
+
+.content-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--primary-500);
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid var(--primary-500);
+  padding-bottom: 12px;
+}
+
+/* Content Box */
+.content-box {
+  background: var(--gray-50);
+  padding: 32px;
+  border-radius: 8px;
+  border-left: 4px solid var(--gray-300);
+}
+
+.content-box.warning {
+  background: rgba(239, 68, 68, 0.05);
+  border-left-color: #EF4444;
+}
+
+.content-text {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--gray-700);
+  margin-bottom: 20px;
+}
+
+.content-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Subsection */
+.subsection-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-800);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.subsection-title:first-child {
+  margin-top: 0;
+}
+
+/* Lists */
+.terms-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0;
+}
+
+.terms-list li {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--gray-700);
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.terms-list li:before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: var(--primary-500);
+  font-weight: bold;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: baseline;
+  font-size: 15px;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: var(--gray-800);
+  min-width: 120px;
+}
+
+.contact-value {
+  color: var(--gray-700);
+}
+
+.contact-link {
+  color: var(--primary-500);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.contact-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Update Info */
+.update-info {
+  background: rgba(30, 58, 138, 0.05);
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.update-text {
+  font-size: 14px;
+  line-height: 2;
+  color: var(--gray-600);
+}
+
+.update-text strong {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+/* Responsive Styles */
+@media (max-width: 1023px) {
+  .terms-hero {
+    min-height: 40vh;
+  }
+
+  .terms-hero-container,
+  .terms-container {
+    padding: 0 40px;
+  }
+
+  .terms-content-section {
+    padding: 80px 0;
+  }
+
+  .content-block {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .terms-hero {
+    min-height: 35vh;
+    padding-top: 60px;
+  }
+
+  .terms-hero-container,
+  .terms-container {
+    padding: 0 20px;
+  }
+
+  .terms-content-section {
+    padding: 60px 0;
+  }
+
+  .content-title {
+    font-size: 24px;
+  }
+
+  .intro-text,
+  .content-box {
+    padding: 20px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact-label {
+    min-width: auto;
+  }
+
+  .terms-list li {
+    padding-left: 20px;
+  }
+}

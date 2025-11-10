@@ -41,6 +41,11 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
+        <div className="footer-legal">
+          <Link to="/security-privacy" className="footer-legal-link">情報セキュリティ・個人情報保護</Link>
+          <span className="footer-separator">|</span>
+          <Link to="/terms" className="footer-legal-link">ご利用規約</Link>
+        </div>
         <p className="footer-copyright">
           &copy; 2025 EvangSol Inc. All rights reserved.
         </p>
