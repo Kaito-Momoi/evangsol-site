@@ -38,7 +38,6 @@ const HeroSection = () => {
             </span>
           </motion.h1>
           <motion.p className="hero-description" variants={heroAnimation}>
-            日本企業のビジネス慣習を理解し、<br />
             グローバル基準のERPで成長を加速させます
           </motion.p>
         </motion.div>

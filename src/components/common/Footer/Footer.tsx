@@ -2,11 +2,15 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-brand">
-          <Link to="/" className="footer-logo">
+          <Link to="/" className="footer-logo" onClick={scrollToTop}>
             <img src={`${import.meta.env.BASE_URL}EvangSol_logo.png`} alt="EvangSol" className="footer-logo-image" />
             <img src={`${import.meta.env.BASE_URL}solution-provider_white.png`} alt="Solution Provider" className="footer-badge-image" />
           </Link>
@@ -27,14 +31,14 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-column-title">会社情報</h3>
             <ul className="footer-link-list">
-              <li><Link to="/company">会社概要</Link></li>
+              <li><Link to="/company" onClick={scrollToTop}>会社概要</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h3 className="footer-column-title">サポート</h3>
             <ul className="footer-link-list">
-              <li><Link to="/contact">お問い合わせ</Link></li>
+              <li><Link to="/contact" onClick={scrollToTop}>お問い合わせ</Link></li>
             </ul>
           </div>
         </div>
@@ -42,9 +46,9 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-legal">
-          <Link to="/security-privacy" className="footer-legal-link">情報セキュリティ・個人情報保護</Link>
+          <Link to="/security-privacy" className="footer-legal-link" onClick={scrollToTop}>情報セキュリティ・個人情報保護</Link>
           <span className="footer-separator">|</span>
-          <Link to="/terms" className="footer-legal-link">ご利用規約</Link>
+          <Link to="/terms" className="footer-legal-link" onClick={scrollToTop}>ご利用規約</Link>
         </div>
         <p className="footer-copyright">
           &copy; 2025 EvangSol Inc. All rights reserved.

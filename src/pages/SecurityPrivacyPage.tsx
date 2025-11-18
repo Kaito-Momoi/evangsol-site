@@ -57,7 +57,7 @@ const SecurityPrivacyPage = () => {
               <div className="policy-item">
                 <h3 className="policy-heading">1. 情報セキュリティ管理体制</h3>
                 <p className="policy-text">
-                  代表取締役 小山利之を最高責任者として、情報セキュリティマネジメントシステムを確立し、
+                  代表取締役 小山敏幸を最高責任者として、情報セキュリティマネジメントシステムを確立し、
                   継続的な改善活動を実施しています。
                 </p>
               </div>
@@ -252,7 +252,7 @@ const SecurityPrivacyPage = () => {
                 </div>
                 <div className="contact-row">
                   <span className="contact-label">所在地：</span>
-                  <span className="contact-value">〒103-0023 東京都中央区日本橋本町4-15-11</span>
+                  <span className="contact-value">〒103-0023 東京都中央区日本橋本町4-15-11　市橋ビル６階</span>
                 </div>
                 <div className="contact-row">
                   <span className="contact-label">担当部署：</span>
@@ -264,7 +264,7 @@ const SecurityPrivacyPage = () => {
                 </div>
                 <div className="contact-row">
                   <span className="contact-label">営業時間：</span>
-                  <span className="contact-value">平日 9:00～18:00（土日祝日を除く）</span>
+                  <span className="contact-value">平日 10:00～19:00（土日祝日を除く）</span>
                 </div>
               </div>
 

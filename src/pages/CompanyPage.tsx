@@ -74,13 +74,6 @@ const CompanyPage = () => {
               </div>
             </div>
             <div className="overview-row">
-              <div className="overview-label">所在地</div>
-              <div className="overview-value">
-                〒103-0023<br />
-                東京都中央区日本橋本町4-15-11　市橋ビル６階
-              </div>
-            </div>
-            <div className="overview-row">
               <div className="overview-label">グループ会社</div>
               <div className="overview-value">
                 株式会社EvangTech<br />
@@ -125,14 +118,6 @@ const CompanyPage = () => {
                   東京メトロ銀座線・半蔵門線「三越前駅」A8出口より徒歩3分<br />
                   JR総武線快速「新日本橋駅」5番出口より徒歩5分<br />
                   東京メトロ日比谷線「小伝馬町駅」4番出口より徒歩7分
-                </p>
-              </div>
-
-              <div className="access-item">
-                <h3 className="access-item-title">お問い合わせ</h3>
-                <p className="access-item-text">
-                  Tel: 03-6231-1328<br />
-                  Fax: 03-6231-1348
                 </p>
               </div>
             </motion.div>
