@@ -6,7 +6,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - DEPLOY_TARGET=amplify npm run build
+        - export DEPLOY_TARGET=amplify && npm run build
   artifacts:
     baseDirectory: dist
     files:
