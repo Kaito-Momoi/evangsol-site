@@ -6,9 +6,11 @@ import SecurityPrivacyPage from './pages/SecurityPrivacyPage';
 import TermsPage from './pages/TermsPage';
 import './App.css';
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+
 function App() {
   return (
-    <Router basename="/evangsol-site">
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/company" element={<CompanyPage />} />
