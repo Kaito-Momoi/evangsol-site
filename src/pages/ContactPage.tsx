@@ -4,6 +4,8 @@ import Header from '../components/common/Header/Header';
 import Footer from '../components/common/Footer/Footer';
 import './ContactPage.css';
 
+const LAMBDA_URL = 'https://mtahucuid3yuhbpvkn4idrdcsq0hvsjf.lambda-url.ap-northeast-1.on.aws/';
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,6 +15,7 @@ const ContactPage = () => {
     category: '提案依頼',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -36,11 +39,38 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // フォーム送信処理をここに実装
-    console.log('Form submitted:', formData);
-    alert('お問い合わせを送信しました。担当者より折り返しご連絡いたします。');
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(LAMBDA_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('お問い合わせを送信しました。担当者より折り返しご連絡いたします。');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          category: '提案依頼',
+          message: ''
+        });
+      } else {
+        throw new Error('送信失敗');
+      }
+    } catch (error) {
+      alert('送信に失敗しました。時間をおいて再度お試しください。');
+      console.error('送信エラー:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -168,11 +198,13 @@ const ContactPage = () => {
                   />
                 </div>
 
-                <button type="submit" className="submit-button">
-                  送信する
-                  <svg className="submit-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                <button type="submit" className="submit-button" disabled={isSubmitting}>
+                  {isSubmitting ? '送信中...' : '送信する'}
+                  {!isSubmitting && (
+                    <svg className="submit-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  )}
                 </button>
               </form>
             </motion.div>
