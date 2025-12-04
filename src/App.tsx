@@ -4,6 +4,7 @@ import CompanyPage from './pages/CompanyPage';
 import ContactPage from './pages/ContactPage';
 import SecurityPrivacyPage from './pages/SecurityPrivacyPage';
 import TermsPage from './pages/TermsPage';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
@@ -11,6 +12,7 @@ const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
 function App() {
   return (
     <Router basename={basename}>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/company" element={<CompanyPage />} />
