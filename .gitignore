@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project management files
+TODO_RELEASE.csv
+
+# GitHub workflows (not needed for Amplify)
+.github/
