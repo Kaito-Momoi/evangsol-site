@@ -210,13 +210,6 @@ const TermsPage = () => {
             </div>
           </motion.div>
 
-          {/* 最終更新日 */}
-          <motion.div className="update-info" {...fadeInUp}>
-            <p className="update-text">
-              <strong>制定日：</strong> 2021年2月18日<br />
-              <strong>最終改訂日：</strong> 2024年12月1日
-            </p>
-          </motion.div>
         </div>
       </section>
 
