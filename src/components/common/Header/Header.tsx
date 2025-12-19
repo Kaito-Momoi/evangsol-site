@@ -34,7 +34,7 @@ const Header = () => {
               ソリューション
             </span>
             <div className="dropdown-menu">
-              <a href="https://www.evangsol.co.jp/" className="dropdown-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://netsuite.evangsol.co.jp/" className="dropdown-link" target="_blank" rel="noopener noreferrer">
                 NetSuite導入
               </a>
             </div>
@@ -80,7 +80,7 @@ const Header = () => {
           >
             <div className="mobile-nav-section">
               <span className="mobile-nav-label">ソリューション</span>
-              <a href="https://www.evangsol.co.jp/" className="mobile-nav-link mobile-nav-sublink" target="_blank" rel="noopener noreferrer">
+              <a href="https://netsuite.evangsol.co.jp/" className="mobile-nav-link mobile-nav-sublink" target="_blank" rel="noopener noreferrer">
                 NetSuite導入
               </a>
             </div>
