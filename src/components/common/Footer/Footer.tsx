@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-column-title">ソリューション</h3>
             <ul className="footer-link-list">
-              <li><a href="https://www.evangsol.co.jp/" target="_blank" rel="noopener noreferrer">NetSuite導入</a></li>
+              <li><a href="https://netsuite.evangsol.co.jp/" target="_blank" rel="noopener noreferrer">NetSuite導入</a></li>
             </ul>
           </div>
 
